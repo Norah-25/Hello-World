@@ -1,8 +1,24 @@
-const num1 = 5
-const num2 = 10
+ 
+var  math  = {}
 
-function addValues() {
-    console.log( `the sum is : ${num1 + num2}` )
+math.addValues= function(num1 , num2) {
+   return  num1 + num2  ; 
 }
 
-addValues()
+math.CalculateTax= function (price){
+    return price * 0.15 ;
+}
+
+
+math.CheckIfPositve = function(num){
+    if(num ==0 ){
+        return null 
+    }
+    else if (num > 0 )
+    return true
+    else 
+    return false  
+}
+
+ 
+module.exports = math ; 
